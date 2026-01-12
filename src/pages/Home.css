@@ -1,0 +1,26 @@
+.card-wrapper {
+  margin-top: 4.5rem;
+}
+
+.posts-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.posts-grid>* {
+  flex: 0 0 460px;
+}
+
+@media (max-width: 1024px) {
+  .posts-grid>* {
+    flex: 0 0 calc(50% - 10px);
+  }
+}
+
+@media (max-width: 780px) {
+  .posts-grid>* {
+    flex: 0 0 100%;
+  }
+}

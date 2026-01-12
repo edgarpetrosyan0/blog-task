@@ -1,0 +1,98 @@
+.post-card {
+  background: #fff;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+  font-family: Roboto;
+}
+
+.post-card:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.post-image-wrapper {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.post-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.post-content {
+  padding: 1.25rem 0.5rem;
+}
+
+.post-meta-top {
+  margin-bottom: 0.75rem;
+}
+
+.category {
+  color: #000;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tags {
+  color: #EB0028;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.title {
+width: 360px;
+font-weight: 700;
+font-size: 24px;
+line-height: 30px;
+color: #000000;
+}
+
+.post-meta-bottom {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 1rem;
+}
+
+.author {
+  font-weight: 600;
+  color: #000;
+}
+
+.separator {
+  color: #ccc;
+}
+
+.date,
+.views {
+  color: #999;
+}
+
+.description {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #929292;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+}
