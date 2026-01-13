@@ -9,6 +9,8 @@
   z-index: 1200;
   opacity: 0;
   animation: fadeIn 0.25s forwards;
+    font-family: 'Roboto';
+
 }
 
 @keyframes fadeIn {
@@ -114,10 +116,10 @@
 }
 
 .modal-description {
-  font-family: "Roboto", system-ui, sans-serif;
+  font-family: "Roboto";
   font-size: 16px;
   line-height: 1.65;
-  color: #2f2f2f;
+  color: #929292;
   white-space: pre-wrap;
 }
 
