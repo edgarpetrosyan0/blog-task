@@ -24,3 +24,17 @@
     flex: 0 0 100%;
   }
 }
+
+.not-found {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  margin-top: 3rem;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  margin: 3rem 0;
+}

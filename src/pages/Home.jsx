@@ -1,8 +1,8 @@
-import "./Home.css";
 import { useEffect, useState } from "react";
 import Header from "../components/Header/Header";
 import PostCard from "../components/PostCard/PostCard";
 import PostModal from "../components/PostModal/PostModal";
+import "./Home.css";
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
@@ -47,16 +47,18 @@ export default function Home() {
       <div className="main">
         <div className="card-wrapper">
           {loading ? (
-            <p style={{ textAlign: "center", padding: "4rem 0" }}>Loading posts...</p>
+            <p className="loading">Loading...</p>
+
           ) : filteredPosts.length > 0 ? (
+
             <div className="posts-grid">
               {filteredPosts.map(post => (
                 <PostCard key={post.title} post={post} onClick={() => setActivePost(post)} />
               ))}
             </div>
           ) : (
-            <p style={{ gridColumn: "1 / -1", textAlign: "center", padding: "4rem 1rem" }}>
-              No posts found for "{query}"
+            <p className="not-found">
+              No posts found
             </p>
           )}
         </div>
