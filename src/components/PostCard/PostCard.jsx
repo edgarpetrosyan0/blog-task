@@ -6,7 +6,7 @@ export default function PostCard({ post, onClick }) {
       <div className="post-image-wrapper">
         <img
           src={post.img}
-          srcSet={`${post.img} 1x, ${post.image_2x || post.img} 2x`}
+          srcSet={`${post.img} 1x, ${post.image_2x} 2x`}
           alt={post.title}
           loading="lazy"
         />
@@ -14,7 +14,7 @@ export default function PostCard({ post, onClick }) {
 
       <div className="post-content">
         <div className="post-meta-top">
-         <span className="tags">{post.tags}</span>
+          <span className="tags">{post.tags}</span>
         </div>
 
         <h3 className="title">{post.title}</h3>

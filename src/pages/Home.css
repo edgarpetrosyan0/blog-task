@@ -1,40 +1,37 @@
 .card-wrapper {
-  margin-top: 4.5rem;
+  margin-top: 3rem;
 }
 
 .posts-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
 }
 
 .posts-grid>* {
-  flex: 0 0 460px;
+  flex: 0 0 calc(33.333% - 14px);
 }
 
+
 @media (max-width: 1024px) {
+
   .posts-grid>* {
     flex: 0 0 calc(50% - 10px);
   }
 }
 
 @media (max-width: 780px) {
+
   .posts-grid>* {
     flex: 0 0 100%;
   }
+
 }
 
-.not-found {
-  text-align: center;
-  font-size: 18px;
-  color: #666;
-  margin-top: 3rem;
-}
-
+.not-found,
 .loading {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #666;
   margin: 3rem 0;
 }
