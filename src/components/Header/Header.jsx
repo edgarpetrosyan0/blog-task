@@ -47,26 +47,29 @@ export const SearchIcon = () => (
   </svg>
 );
 
-
 export default function Header({ query, setQuery }) {
   const [hideMenu, setHideMenu] = useState(false);
-  const [lastScroll, setLastScroll] = useState(0);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
 
   useEffect(() => {
+    let lastScrollY = window.scrollY;
+
     const handleScroll = () => {
       const currentScroll = window.scrollY;
+
       if (currentScroll > 200) {
-        setHideMenu(currentScroll > lastScroll);
+        setHideMenu(currentScroll > lastScrollY);
       } else {
         setHideMenu(false);
       }
-      setLastScroll(currentScroll);
+
+      lastScrollY = currentScroll;
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScroll]);
+  }, []);
 
 
   return (
@@ -107,7 +110,7 @@ export default function Header({ query, setQuery }) {
               <div className="submenu">
                 <a href="#">Post Header <ChevronRight /></a>
                 <a href="#">Post Layout <ChevronRight /></a>
-                <a href="#">Share Buttons <ChevronRight /></a>
+                <a href="#" >Share Buttons <ChevronRight /></a>
                 <a href="#">Gallery Post  <ChevronRight /></a>
                 <a href="#">Video Post <ChevronRight /></a>
               </div>

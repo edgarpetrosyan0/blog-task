@@ -5,7 +5,7 @@
   z-index: 1000;
   transition: transform 0.4s ease;
   width: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   margin-top: 30px;
 }
 
@@ -46,23 +46,14 @@
   gap: 5px;
   padding-bottom: 15px;
   margin-bottom: -15px;
+  font-family: 'Roboto';
 }
 
 .menu-item:hover {
   color: #000;
 }
 
-.menu-item.buy-now {
-  background: #000;
-  color: #fff !important;
-  padding: 0.55rem 1.4rem;
-  border-radius: 6px;
-}
-
-.menu-item.buy-now:hover {
-  background: #333;
-}
-
+ 
 
 .menu-item:hover .submenu {
   display: flex;
@@ -81,6 +72,7 @@
   z-index: 10;
   border: 1px solid #E9E9E9;
   overflow: hidden;
+
 }
 
 .submenu a {
@@ -92,7 +84,7 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #E9E9E9;
-
+  font-family: 'Roboto';
 }
 
 .submenu a:active {
@@ -123,6 +115,7 @@
   background: transparent;
   opacity: 0;
   transition: all 0.35s ease;
+  pointer-events: none;
 }
 
 
@@ -222,6 +215,10 @@
     display: block;
   }
 
+  .logo {
+
+    margin-bottom: 0 !important;
+  }
   .search-area {
     margin-right: 1.6rem;
     margin-top: -0.6rem;
@@ -255,6 +252,10 @@
   .logo-container {
     justify-content: flex-start;
     padding: unset !important;
+  }
+
+  .header-right-actions {
+    margin-top: 10px !important;
   }
 }
 
