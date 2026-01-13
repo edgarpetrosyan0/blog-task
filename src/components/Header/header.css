@@ -87,10 +87,6 @@
   font-family: 'Roboto';
 }
 
-.submenu a:active {
-  display: none;
-}
-
 
 .search-toggle {
   background: none;
@@ -240,9 +236,7 @@
 
   }
 
-
   .header {
-
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -308,3 +302,4 @@
   color: #969696;        
   opacity: 0.6;
 }
+
