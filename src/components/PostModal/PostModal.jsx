@@ -1,5 +1,4 @@
-// PostModal.jsx
-import "./post-modal.css";
+ import "./post-modal.css";
 
 export default function PostModal({ post, onClose }) {
   if (!post) return null;
