@@ -110,7 +110,7 @@ export default function Header({ query, setQuery }) {
               <div className="submenu">
                 <a href="#">Post Header <ChevronRight /></a>
                 <a href="#">Post Layout <ChevronRight /></a>
-                <a href="#" >Share Buttons <ChevronRight /></a>
+                <a href="#" className="disabled">Share Buttons <ChevronRight /></a>
                 <a href="#">Gallery Post  <ChevronRight /></a>
                 <a href="#">Video Post <ChevronRight /></a>
               </div>
